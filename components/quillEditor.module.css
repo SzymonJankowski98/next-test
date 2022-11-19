@@ -1,0 +1,7 @@
+.save {
+  margin-top: 8px;
+  cursor: pointer;
+  background-color: rgb(9, 11, 32);
+  color: white;
+  border-radius: 5px;
+}

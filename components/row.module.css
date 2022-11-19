@@ -1,0 +1,18 @@
+.row {
+  height: fit-content;
+  min-height: 98px;
+  width: min(800px, 100vw);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.outline,
+.row:hover {
+  outline: 2px solid rgb(42, 110, 246);
+  outline-offset: 2px;
+}
+
+.cell {
+  flex-grow: 1;
+}

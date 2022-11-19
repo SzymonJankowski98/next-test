@@ -1,0 +1,29 @@
+.rowWrapper {
+  position: relative;
+}
+
+.toolbar {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%) translateY(-3px);
+  padding-left: 2px;
+  display: none;
+}
+
+.showToolbar,
+.toolbar:hover,
+.rowWrapper:hover .toolbar {
+  display: block;
+}
+
+.toolbar div {
+  cursor: pointer;
+  background-color: rgb(42, 110, 246);
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
