@@ -6,7 +6,7 @@ export default function Row(props: {id: number, provided: DraggableProvided, con
   return (
     <div id={`r${props.id.toString()}`} className={`${styles.row} ${props.showOutline ? styles.outline : ''}`} {...props.provided.draggableProps} ref={props.provided.innerRef}>
       {props.content.map((cell :any)=>
-        <div className={`${styles.cell} ql-editor`} dangerouslySetInnerHTML={{__html: cell.content}}></div>
+        <div key={props.id} className={`${styles.cell} ql-editor`} dangerouslySetInnerHTML={{__html: cell.content}}></div>
         // <Toolbar
         //   content={<div className={`${styles.cell} ql-editor`} dangerouslySetInnerHTML={{__html: cell.content}}></div>}
         //   options={<><div>edit</div></>}
